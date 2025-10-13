@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="message-app" uuid="dde2dec3-2360-44bb-b60a-96636f5b300f">
-      <driver-ref>postgresql</driver-ref>
+    <data-source source="LOCAL" name="test_mysql" uuid="a4654147-03ed-4f03-b121-e8da9b7266fc">
+      <driver-ref>mysql.8</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
-      <jdbc-url>jdbc:postgresql://ep-billowing-bonus-ad8xw8am-pooler.c-2.us-east-1.aws.neon.tech:5432/neondb</jdbc-url>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3308</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
+    <data-source source="LOCAL" name="mydbsql" uuid="db42c305-a687-4708-a51e-ac4ee7807aa9">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://tcp.us-east-1.clawcloudrun.com:31124</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
   </component>
