@@ -20,3 +20,6 @@ def send_message(request):
         return Response({'message': 'Message sent successfully'},
                         status=status.HTTP_201_CREATED)
 
+    else:
+        return Response(message_serializer.errors,
+                        status=status.HTTP_400_BAD_REQUEST)
