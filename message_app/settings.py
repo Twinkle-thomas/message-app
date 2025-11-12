@@ -30,7 +30,8 @@ SECRET_KEY = "django-insecure-(rk6u2l)9n&i7@ao1bdycpoeo+6ciy2%n@n!&&f+crm-h8k#m$
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]  # only my UI can access me
-
+CORS_ALLOW_ALL_ORIGINS = True
+CORS_ALLOW_CREDENTIALS = True
 # Application definition
 
 INSTALLED_APPS = [
@@ -149,6 +150,8 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'rest_framework.authentication.TokenAuthentication',
         # ... other authentication classes if needed
-    ]
+    ],
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
 }
-CORS_ORIGIN_ALLOW_ALL = True
